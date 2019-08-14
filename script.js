@@ -63,19 +63,19 @@ letters['z'] = '#141212';
 letters[' '] = 'white';
 
 
-saveButton.addEventListener('click', updateColors);
+// saveButton.addEventListener('click', updateColors);
 
-function updateColors() {
-  console.log("Inside SAVE button function")
-  letters = [];
-  letters.forEach(function(element) {
-    console.log("Inside forEach??");
-    letters[element]
-    letters[element] = document.getElementById(element).value;
+// function updateColors() {
+//   console.log("Inside SAVE button function")
+//   letters = [];
+//   letters.forEach(function(element) {
+//     console.log("Inside forEach??");
+//     letters[element]
+//     letters[element] = document.getElementById(element).value;
 
-  });
+//   });
 
-}
+// }
 
 
 convertButton.addEventListener('click', convertText);
