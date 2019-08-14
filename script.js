@@ -1,32 +1,3 @@
-/*
-1. Create a list of letter
-1.1 Associate a letter with a color code
-
-2. Create an input field
-3. Add event handler to capture what you type
-3.1 Console log what you write
-
-*/
-
-/*
-
-function on(eventName, callback){
-    textInput.addEventListener(eventName, callback);
-}
-
-
-on('keyup', function(event){
-    
-  var colorCube = document.createElement('span');
-  colorCube.style.backgroundColor = letters[event.key];
-  document.getElementById('colored-text').appendChild(colorCube);
-  console.log(colorCube);
-
-    
-});
-
-*/
-
 var input = document.getElementById('inputField');
 var convertButton = document.getElementById('btn-convert');
 var output = document.getElementById('colored-text');
@@ -61,21 +32,6 @@ letters['x'] = '#7a1d0a';
 letters['y'] = '#59201a';
 letters['z'] = '#141212';
 letters[' '] = 'white';
-
-
-// saveButton.addEventListener('click', updateColors);
-
-// function updateColors() {
-//   console.log("Inside SAVE button function")
-//   letters = [];
-//   letters.forEach(function(element) {
-//     console.log("Inside forEach??");
-//     letters[element]
-//     letters[element] = document.getElementById(element).value;
-
-//   });
-
-// }
 
 
 convertButton.addEventListener('click', convertText);
